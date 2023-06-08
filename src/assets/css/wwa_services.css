@@ -1,0 +1,55 @@
+/* Start of Services */
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+    
+}
+
+.servBtn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.servCard {
+    border: 5px solid var(--LtbmBlue);
+    border-radius: 3px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s;
+    /* cursor: pointer; */
+    background-color: var(--LtbmBlue);
+}
+.servCard:hover {
+    transform: scale(1.15);
+}
+
+.servImg {
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.servText {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope', sans-serif;
+    color: var(--bmTexts);
+}
+
+.servText h5, .servText p {
+    margin: 0;
+}
+
+.servText h5 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.servText p {
+    font-size: 18px;
+}
+/* End of Services */

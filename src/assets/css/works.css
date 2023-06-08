@@ -1,0 +1,151 @@
+/* Start of brand */
+.brand-logo {
+    background-color: var(--LtbmBlue);
+    text-align: center;
+}
+.partners-head{
+    padding-top: 20px;
+    font-size: 60px;
+    font-family: 'Manrope', sans-serif;
+    color: var(--bmTexts);
+    text-align: center;
+    font-weight: 900;
+}
+.partners{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    
+}
+
+.partners div{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,rgb(204,222,233), rgb(203,221,233));
+    border-radius: 50%;
+    opacity: 0.3;
+}
+.brand-logo div img {
+    width: 8rem;
+    border-radius: 50%;
+    background: #ccc;
+}
+/* End of brand */
+
+#formDiv {
+    /* background-color: rgb(173,213,215); */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    color: var(--bmTexts);
+    font-family: 'Manrope', sans-serif;
+}
+.review-head{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 30px;
+    margin-left: 90px;
+}
+
+/* .reviews-head{
+    background-color: rgb(204,222,233);
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(48,75,83);
+    text-align: center;
+} */
+
+.review-head h1{
+    font-size: 70px;
+    font-weight: 900;
+    padding: 0 30px;
+    color: rgb(48,75,83);
+}
+
+#reviewForm {
+    border: 1px solid rgb(204,222,233);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px;
+    background-color: rgb(245, 245, 245);
+    font-weight: 400;
+}
+
+#clientName, #clientReview{
+    border-radius: 5px;
+    border: 1px dotted var(--LtGray);
+    background-color: var(--LtltGrey);
+}
+
+.starv1 {
+    color: orange;
+}
+
+#reviewSendBtn {
+    border-radius: 5px;
+    border: 1px dotted var(--LtGray);
+    background-color: var(--DrkBlue);
+    color: var(--White);
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    
+}
+
+/* *********** */
+.rating:not(:checked) > input {
+    position:absolute;
+    display: none;
+}
+.rating:not(:checked) > label {
+    float:right;
+    width:1.5em;
+    overflow:hidden;
+    /* white-space:nowrap; */
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+
+.rating > input:checked ~ label {
+    color:  #ffc700;   
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color:  #ffc700;
+}
+
+
+
+
+
+/* Start of brand media*/
+@media (max-width: 1045px) {
+    .brand-logo div img{
+        width: 5rem;
+    }
+}
+@media (max-width: 760px) {
+    .brand-logo div img{
+        width: 3rem;
+    }
+}
+@media (max-width: 430px) {
+    .brand-logo div img{
+        width: 2rem;
+    }
+}
+/* End of brand media*/

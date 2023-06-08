@@ -1,0 +1,25 @@
+/* Footer */
+.footer {
+    background-color: var(--bmNav);
+    position: sticky;
+    bottom: 0;
+}
+.footerli, .navli, .copyright {
+    font-size: 15px;
+}
+.social-btn{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    color: var(--bmTexts);
+}
+.social-btn:hover {
+    background-color: rgb(206,224,233);
+    border-radius: 5px;
+}
+
+.ftrBtn {
+    border: none;
+    background-color: transparent;
+}

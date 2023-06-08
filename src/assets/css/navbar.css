@@ -1,0 +1,36 @@
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Manrope', sans-serif; */
+
+#navLogo {
+    height: 80px;
+}
+
+#logoBrand {
+    /* color: var(--BluGreen); */
+    /* border-bottom: 3px solid var(--BluGreen); */
+    color: var(--bmBlue);
+    border-bottom: 3px solid var(--bmBlue);
+    font-weight: 700;
+}
+
+#logoTag {
+    color: var(--bmTexts);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+#navbar {
+    /* background-color: var(--bmNav); */
+    /* background-color: var(--LtbmBlue); */
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBrand {
+    display: flex;
+}
+
+.navLink {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: var(--bmTexts);
+}

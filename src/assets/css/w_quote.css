@@ -1,0 +1,153 @@
+.qCard {
+    height: 550px;
+    width: 350px;
+    padding: 30px;
+    background-color: var(--bmBlueOp);
+    margin-bottom: 50px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.qCard h1, h2, p {
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+}
+
+.qCard h1 {
+    font-weight: 900;
+}
+
+.qCard h2 {
+    font-weight: 600;
+    color: var(--bmBlue);
+}
+
+.qCardUlt h2 {
+    color: var(--bmRed);
+}
+
+.quoteBtn {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--bmBlue);
+
+    /* width: 200px; */
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid var(--bmBlue);
+    /* border-radius: 3px; */
+    border-radius: 0.375rem;
+    
+    opacity: 0.6;
+    transition: 0.3s;
+
+    
+}
+
+.quoteBtn:hover {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+
+    width: 210px;
+    border-radius: 3px;
+
+    background-color: var(--bmTexts);
+
+    opacity: 1;
+    box-shadow: 0 5px #999;
+}
+
+.quoteBtnUlt {
+    background-color: var(--bmTexts);
+    color: white;
+}
+
+.quoteBtn:active {
+    background-color: var(--bmBlue);
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+.qCardModalBG {
+    background-color: var(--bmBlueOp);
+}
+
+.qCardModal {
+    background-color: var(--LtbmBlue);
+    font-family: 'Manrope', sans-serif;
+    color: var(--bmTexts);
+    font-weight: 600;
+    /* border: none; */
+}
+
+.qCardModal input[type=checkbox]:checked+label {
+    accent-color: var(--bmBlue);
+    color:var(--bmBlue);
+}
+
+input[type="checkbox"]:disabled+label
+{
+     color:var(--bmBlue);
+}
+
+.qModalBtn {
+    background-color: var(--bmBlueOp);
+    color: var(--bmBlue);
+    font-weight: 600;
+    border: 1px solid var(--bmBlue);
+}
+
+.qModalBtn:hover {
+    background-color: var(--bmBlue);
+    color: var(--White);
+    font-weight: 500;
+    border: 1px solid var(--bmBlue);
+}
+
+.qModalBtnX {
+    background-color: var(--LtbmBlue);
+    color: var(--bmBlue);
+    border: 1px solid var(--bmBlue);
+}
+
+.qModalBtnX:hover {
+    background-color: var(--bmNav);
+    color: var(--White);
+    border: 1px solid var(--bmNav);
+}
+
+.qSvcList {
+    /* border: 1px solid var(--bmBlue); */
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+    /* text-align: center; */
+}
+
+.qSvcList th {
+    border-bottom: 1px dashed ;
+}
+
+.svcName {
+    text-align: left;
+}
+
+.amount {
+    text-align: right;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    color: var(--bmTexts);
+}
+
+.formErrMsg {
+    color: var(--bmRed);
+    font-size: 12px;
+}

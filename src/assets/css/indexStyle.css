@@ -1,0 +1,522 @@
+    /* START OF ABOUT */
+
+    .about {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-family: 'Manrope', sans-serif;
+    }
+
+    .about-desc {
+        width: 50%;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+
+    .about-desc h1 {
+        font-size: 100px;
+        font-weight: 900;
+        color: var(--bmTexts);
+    }
+
+    .about-desc p {
+        font-size: 28px;
+        text-align: justify;
+        color: var(--bmTexts);
+        
+    }
+
+    .about-photo {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-photo img {
+        height: 80vh;
+    }
+
+    .about-desc-btn {
+        font-family: 'Manrope', sans-serif;
+        color: var(--bmTexts);
+        font-size: 25px;
+        font-weight: 500;
+        width: 192px;
+        background-color: rgb(206,224,233);
+        
+        border-radius: 3px;
+        border: 3px solid rgb(30,44,62);
+    }
+    .about-desc-btn:hover {
+        background-color: rgb(30,44,62);
+        color: white;
+    }
+    /* End of About */
+
+    /* Start Of Counter */
+    .counter{
+        background-color: var(--LtbmBlue);
+        display: flex;  
+        justify-content: space-around;
+
+        font-family: 'Manrope', sans-serif;
+        color: var(--bmTexts);
+    }
+
+    .counter-container{
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .counter-container .fa-solid{
+        font-size: 100px;
+    }
+
+    .counter-container .content{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .num{
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    /* End Of Counter */
+
+    /* Start of Skills */
+    .skills {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-family: 'Manrope', sans-serif;
+        color: var(--bmTexts);
+    }
+    .skills-desc {
+        width: 50%;
+        /* background-color: rgb(206,224,233); */
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        padding-right: 30px;
+    }
+
+    .skills-desc h1 {
+        font-size: 100px;
+        font-weight: 900;
+    }
+
+    .skills-desc p {
+        font-size: 28px;
+        text-align: justify;
+        
+    }
+
+    .skills-photo {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills-photo img {
+        height: 80vh;
+    }
+
+    /* End Of Skills */
+
+    
+
+    /* Start of Members */
+
+    .team {
+        background-color: var(--LtbmBlue);
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: 'Manrope', sans-serif;
+        color: var(--bmTexts);
+    }
+
+    .member-title {
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    .member-title h1 {
+        font-size: 80px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .member-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .member {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .member-image {
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .member-name h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .member-position {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .member-socials {
+        text-align: center;
+    }
+    .member-socials button{
+        padding: 0 10px;
+        border: none;
+        background-color: transparent;
+        color: var(--bmTexts);
+    }
+    
+    /* End of Members */
+
+    
+
+    /* Start of brand */
+    /* .brand-logo {
+        background-color: rgb(173,213,215);
+        display: flex;
+        justify-content: space-around;
+    }
+    .brand-logo div img {
+        width: 8rem;
+        border-radius: 50%;
+        padding-top: 30px;
+        padding-bottom: 30px; 
+    } */
+    /* End of brand */
+
+    
+
+    /******************** Start of Media ********************/
+
+    /* Start of landing page */
+
+    @media (max-width: 1300px) and (min-width: 871px){
+        .tl1 {
+            font-size: 90px;
+        }
+        .tl2 {
+            font-size: 48px;
+            margin-bottom: 24px;
+        }
+        .explore-btn button {
+            font-size: 20px;
+        } 
+    }
+
+    @media (max-width: 870px) {
+        .tl1 {
+            font-size: 60px;
+        }
+        .tl2 {
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
+        .explore-btn button {
+            font-size: 20px;
+        } 
+    }
+
+    @media (max-width: 530px) {
+        .tl1 {
+            font-size: 36px;
+        }
+        .tl2 {
+            font-size: 15px;
+            margin-bottom: 14px;
+        }
+        .explore-btn button {
+            font-size: 9px;
+            font-weight: 300;
+            padding: 5px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .tl1 {
+            font-size: 30px;
+        }
+        .tl2 {
+            font-size: 13px;
+            margin-bottom: 14px;
+        }
+        .explore-btn button {
+            font-size: 12px;
+        } 
+    }
+
+    /* @media (max-width: 1300px) and (min-width: 781px){
+        .tl1 {
+            font-size: 60px;
+        }
+        .tl2 {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+        .explore-btn a button {
+            font-size: 20px;
+        } 
+    }
+    
+    @media (max-width: 780px){
+        .tl1 {
+            font-size: 36px;
+        }
+        .tl2 {
+            font-size: 11px;
+            margin-bottom: 14px;
+        }
+        .explore-btn a button {
+            font-size: 12px;
+        }
+    } */
+    /* End of landing page */
+
+
+    /* Start of about page */
+    @media (max-width: 1040px) {
+        .about-desc h1 {
+            font-size: 60px;
+        }
+        .about-desc p {
+            font-size: 16px;
+        }
+        .about-desc-btn {
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: 960px) {
+        .about-photo img {
+            height: 70vh;
+            margin-top: 55px;
+            margin-bottom: 55px;
+        }
+        .about-desc h1 {
+            margin-top: 120px;
+        }
+    }
+
+    @media (max-width: 840px) {
+        .about-desc h1 {
+            font-size: 50px;
+            margin-top: 90px;
+        }
+        .about-desc p {
+            font-size: 14px;
+        }
+        .about-desc-btn {
+            font-size: 19px;
+        }
+        .about-photo img {
+            height: 60vh;
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+    }
+
+    @media (max-width: 710px) {
+        .about-desc h1 {
+            font-size: 40px;
+            margin-top: 70px;
+        }
+        .about-desc p {
+            font-size: 10px;
+        }
+        .about-desc-btn {
+            font-size: 16px;
+        }
+        .about-photo img {
+            height: 50vh;
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .about{
+            flex-direction: column-reverse;
+        }
+        .about-desc, .about-photo{
+            width: 100%;
+        }
+        .about-desc h1 {
+            margin-top: 10px;
+            padding-right: 30px;
+        }
+        .about-desc p {
+            padding-right: 30px;
+        }
+        .about-desc-btn{
+            margin-bottom: 30px;
+        }
+    }
+    /* End of about page */
+
+
+    /* Start of Counter */
+
+    @media (max-width: 900px) {
+        .counter-container .fa-solid{
+            font-size: 80px;
+        }
+        .counter-container .content{
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .num{
+            font-size: 35px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .counter-container .fa-solid{
+            font-size: 70px;
+        }
+        .num{
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 670px) {
+        .counter-container .fa-solid{
+            font-size: 50px;
+        }
+        .num{
+            font-size: 21px;
+        }
+    }
+
+    @media (max-width: 670px) {
+        .counter {
+        flex-wrap: wrap;
+        }
+        .counter-container{
+            height: 20vh;
+            justify-content: left;
+            padding-left: 80px;
+        }
+    }
+
+    /* End of Counter */
+
+
+    /* Start of skills page */
+    @media (max-width: 1080px) {
+        .skills-desc h1 {
+            margin-top: 150px;
+        }
+    }
+
+    @media (max-width: 962px) {
+        .skills-desc h1 {
+            font-size: 60px;
+        }
+        .skills-desc p {
+            font-size: 16px;
+        }
+        .skills-photo img {
+            height: 70vh;
+            margin-top: 55px;
+            margin-bottom: 55px;
+        }
+    }
+
+
+    @media (max-width: 840px) {
+        .skills-desc h1 {
+            font-size: 50px;
+            margin-top: 90px;
+        }
+        .skills-desc p {
+            font-size: 14px;
+        }
+        .skills-photo img {
+            height: 60vh;
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+    }
+
+    @media (max-width: 710px) {
+        .skills-desc h1 {
+            font-size: 40px;
+            margin-top: 70px;
+        }
+        .skills-desc p {
+            font-size: 10px;
+        }
+        .skills-photo img {
+            height: 50vh;
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .skills{
+            flex-direction: column;
+        }
+        .skills-desc, .skills-photo{
+            width: 100%;
+        }
+        .skills-desc h1 {
+            margin-top: 10px;
+            padding-right: 30px;
+        }
+        .skills-desc p {
+            padding-right: 30px;
+        }
+        .skills-desc{
+            padding-left: 30px;
+        }
+    }
+    /* End of skills page */
+
+
+    /* Start of services page */
+    /* .card{
+        margin: 30px 0;
+    } */
+    /* End of services page */
+
+
+    /* Start of brand */
+    @media (max-width: 1045px) {
+        .brand-logo div img{
+            width: 5rem;
+        }
+    }
+    @media (max-width: 760px) {
+        .brand-logo div img{
+            width: 3rem;
+        }
+    }
+    @media (max-width: 430px) {
+        .brand-logo div img{
+            width: 2rem;
+        }
+    }
+    /* End of brand */
+    /******************** End of Media ********************/

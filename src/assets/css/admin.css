@@ -1,0 +1,91 @@
+.adminDiv {
+    /* background-image: linear-gradient(-180deg, grey, var(--bmNav)); */
+    display: flex;
+    /* height: 100vh; */
+}
+
+.admSidebar {
+    border: 1px solid red;
+    width: 200px;
+    height: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.card {
+    /* background-color: var(--bmBlueOp); */
+    /* background-image: linear-gradient(-180deg, grey, var(--bmNav)); */
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.admBtn {
+    border: none;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+    margin-right: 5px;
+    background-color: var(--bmBlueOp);
+}
+
+.admBtn:hover {
+    background-color: var(--bmBlue);
+}
+
+.admBtn:disabled {
+    background-color: var(--bmNav);
+}
+
+.admSelect {
+    border: none;
+    background-color: transparent;
+}
+
+.trMeet td {
+    border-bottom: 1px dashed var(--bmNav);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.overflowCard {
+    overflow: auto;
+    height: 300px;
+}
+
+.freezed {
+    position: sticky;
+    top: 0;
+    background-color: var(--bmNav);
+    height: 30px;
+    z-index: 20;
+}
+
+.reviewCard {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 350px;
+}
+
+.trReview td {
+    border-bottom: 1px dashed var(--bmNav);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.progbar {
+    height: 30px;
+}
+.progLabel {
+    position: relative;
+    left: -80px;
+    top: -10px;
+}

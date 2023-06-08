@@ -1,0 +1,47 @@
+/* Start of Pricing */
+.price {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    color: var(--bmTexts);
+}
+.ourprice {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+}
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pCard {
+    height: 480px;
+    width: 350px;
+    padding: 20px;
+    background-color: var(--bmBlueOp);
+    margin-bottom: 50px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.pCard h1, h2, p {
+    text-align: center;
+    font-weight: 700;
+}
+
+.pCard h1 {
+    font-weight: 900;
+}
+
+.pCard h2 {
+    font-weight: 600;
+    color: var(--bmBlue);
+}
+
+.pCardUlt h2 {
+    color: var(--bmRed);
+}
+
+/* End of Pricing */

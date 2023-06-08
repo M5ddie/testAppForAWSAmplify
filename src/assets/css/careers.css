@@ -1,0 +1,364 @@
+/* START OF HEADER */
+.careers-header {
+    height: 100vh;
+    width: auto;
+    /* background-color: rgb(191,222,238); */
+    background-color: rgb(211,230,241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.careers-header h1{
+    /* font-size: 130px; */
+    font-size: 120px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+.careers-header h4{
+    /* font-size: 30px; */
+    font-size: 25px;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+.careers-header-btn{
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    margin-top: 100px;
+}
+
+.careers-header-btn button{
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 3px;
+    background-color: rgb(30,44,62);
+    color: white;
+    border: none;
+    padding: 25px 30px;
+    margin: 5px;
+    transition: ease .3s;
+
+}
+.careers-header-btn :hover {
+    color: black;
+    background-color: var(--LtbmBlue);
+    border: rgb(30,44,62) 2px solid;
+}
+
+/* END OF HEADER */
+
+
+/* START OF ABOUT */
+
+.careers-about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.careers-about-desc {
+    width: 50%;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.careers-about-desc h1 {
+    font-size: 100px;
+    font-weight: 900;
+    color: var(--bmTexts);
+}
+
+.careers-about-desc p {
+    font-size: 28px;
+    text-align: justify;
+    color: var(--bmTexts);
+    
+}
+
+.careers-about-photo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.careers-about-photo img {
+    height: 80vh;
+}
+
+/* End of About */
+
+/* Start of Openings */
+.careers-opening{
+    position: relative;
+    padding-bottom: 20px;
+}
+.careers-opening-title h1{
+    padding-top: 50px;
+    font-size: 80px;
+    color: var(--bmTexts);  
+}
+
+.careers-opening-searchWrap{
+    color: var(--bmTexts);
+    padding: 30px 0 50px 0;
+    justify-content: space-around;
+}
+
+.input-wrapper{
+    background-color: #eee;
+    width: 25%;
+    border-radius: 5px;
+    height: 50px;
+    padding: 0 10px;
+    box-shadow: 0 0 8px #ddd;
+    display: flex;
+    align-items: center;
+    border: var(--bmTexts) 1px solid;
+}
+
+.input-wrapper input {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.input-wrapper input:focus{
+    outline: none;
+}
+
+.input-wrapper span{
+    font-size: 25px;
+    font-weight: 600;
+    width: 40%;
+}
+
+.categ-wrapper{
+    background-color: #eee;
+    width: 30%;
+    border-radius: 5px;
+    height: 50px;
+    padding: 0 10px;
+    box-shadow: 0 0 8px #ddd;
+    display: flex;
+    align-items: center;
+    border: var(--bmTexts) 1px solid;
+}
+
+.categ-wrapper span{
+    font-size: 25px;
+    font-weight: 600;
+    width: 60%;
+}
+
+.categ-wrapper-dropdown{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+}
+
+.categ-wrapper-dropdown:focus{
+    outline: none;
+}
+
+.search-result-wrapper{
+    padding: 40px 0;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    overflow: scroll;
+    width: 80%;
+    transform: translateX(12.7%);
+    border-radius: 10px;
+}
+.search-result-item{
+    padding-top: 40px;
+    width: 76%;
+    justify-content: space-between;
+}
+
+.search-result-job{
+    width: 80%;
+}
+
+.job-category-item{
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.job-category-item span{
+    padding-left: 5px;
+}
+
+.apply-btn {
+    justify-content: center;
+    width: 20%;
+}
+
+.apply-btn button{
+    border: none;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #eee;
+    width: 100%;
+    border-radius: 5px;
+    transition: ease .2s;
+}
+
+.apply-btn :hover {
+    background-color: rgb(30,44,62);
+    color: white;
+}
+/* End of Openings */
+
+
+/* Start of No Results */
+.none-result-wrapper {
+    padding: 40px 0;
+    flex-direction: column;
+    height: 80vh;
+    overflow: scroll;
+    width: 80%;
+    transform: translateX(12.7%);
+    border-radius: 10px;
+    font-size: 30px;
+
+}
+
+.none-result-wrapper, .suggestions {
+    padding-left: 80px;
+}
+
+.none-result-pic {
+    display: flex;
+    justify-content: right;
+    padding-right: 20%;
+}
+
+.search-params {
+    font-weight: bold;
+}
+/* End of No Results */
+
+/* Start of Job Description */
+
+.job-appl-title{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.job-appl-categItem{
+    font-size: 16px;
+    padding-right: 22px;
+}
+
+.job-appl-categItem span{
+    padding-left: 5px;
+}
+
+.job-appl-salary{
+    padding-top: 10px;
+    font-size: 20px;
+    padding-right: 22px;
+}
+
+
+.job-appl-salary span{ 
+    padding-left: 5px;
+}
+
+.job-appl-descTitle{
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.job-appl-desc{
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.job-appl-criteria{
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.job-appl-criteria-item{
+    font-weight: 400;
+    font-size: 18px;
+}
+/* End of Job Description */
+
+/* Start of Applicant Info */
+.applInfo {
+    margin-top: 50px;
+    padding: 10px;
+    background-color: rgb(234,235,236);
+    margin-bottom: 30px;
+}
+
+.applInfo-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.applInfo-add-title {
+    margin-top: 15px;
+}
+
+.appl-form input {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.appl-form select {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.lastName, .contactNumber, .city {
+    margin-left: 10px;
+}
+
+#streetAddress {
+    width: 45%;
+}
+.appl-button{
+    position: absolute;
+    left: 68%
+}
+.appl-button Button{
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.appl-message {
+    height: 25vh;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.appl-job {
+    display: none;
+}
+
+/* End of Applicant Info */
