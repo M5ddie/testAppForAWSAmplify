@@ -21,13 +21,23 @@ import ContactUs from './pages/contact';
 
 // dependencies
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import "@aws-amplify/ui-react/styles.css";
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Image,
+  View,
+  Card,
+} from "@aws-amplify/ui-react";
+
 
 // components
 import NavbarBM from './components/navbar';
 
-function App() {
+function App({ signOut }) {
   return (
-    <div className="App">
+    <View className="App">
       <BrowserRouter>
       <NavbarBM />
         <Routes>
@@ -37,8 +47,12 @@ function App() {
           <Route path="/contactUs" element={<ContactUs/>} />
         </Routes>
       </BrowserRouter>
-    </div>
+      <Card>
+        <Heading level={1}>We now have Auth!</Heading>
+      </Card>
+      <Button onClick={signOut}>Sign Out</Button>
+    </View>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
