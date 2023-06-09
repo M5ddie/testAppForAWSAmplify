@@ -57,7 +57,7 @@ function App({ signOut }) {
     await Promise.all(
       notesFromAPI.map(async (note) => {
         if (note.image) {
-          const url = await Storage.get(note.name);
+          const url = await Storage.get(note.image);
           note.image = url;
         }
         return note;
@@ -127,8 +127,15 @@ function App({ signOut }) {
           <Button type="submit" variation="primary">
             Create Note
           </Button>
+          <View
+        name="image"
+        as="input"
+        type="file"
+        style={{ alignSelf: "end" }}
+      />
         </Flex>
       </View>
+      
       <Heading level={2}>Current Notes</Heading>
       <View margin="3rem 0">
         {notes.map((note) => (
@@ -145,7 +152,7 @@ function App({ signOut }) {
             {note.image && (
               <Image
                 src={note.image}
-                alt={`visual aid for ${notes.name}`}
+                alt={`visual aid for ${notes.image}`}
                 style={{ width: 400 }}
               />
             )}
@@ -155,12 +162,6 @@ function App({ signOut }) {
           </Flex>
         ))}
       </View>
-      <View
-        name="image"
-        as="input"
-        type="file"
-        style={{ alignSelf: "end" }}
-      />
 
       <Card>
         <Heading level={1}>We now have Auth!</Heading>
