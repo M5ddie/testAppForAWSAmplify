@@ -57,7 +57,7 @@ function App({ signOut }) {
     await Promise.all(
       notesFromAPI.map(async (note) => {
         if (note.image) {
-          const url = await Storage.get(note.image);
+          const url = await Storage.get(note.name);
           note.image = url;
         }
         return note;
@@ -73,7 +73,7 @@ function App({ signOut }) {
     const data = {
       name: form.get("name"),
       description: form.get("description"),
-      image: image.name,
+      image: image.name
     };
     if (!!data.image) await Storage.put(data.name, image);
     await API.graphql({
@@ -124,15 +124,16 @@ function App({ signOut }) {
             variation="quiet"
             required
           />
+          <View
+            name="image"
+            as="input"
+            type="file"
+            style={{ alignSelf: "end" }}
+          />
           <Button type="submit" variation="primary">
             Create Note
           </Button>
-          <View
-        name="image"
-        as="input"
-        type="file"
-        style={{ alignSelf: "end" }}
-      />
+          
         </Flex>
       </View>
       
@@ -153,7 +154,7 @@ function App({ signOut }) {
               <Image
                 src={note.image}
                 alt={`visual aid for ${notes.image}`}
-                style={{ width: 400 }}
+                style={{ maxHeight: 200 }}
               />
             )}
             <Button variation="link" onClick={() => deleteNote(note)}>
